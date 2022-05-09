@@ -1,0 +1,24 @@
+<?php
+/** @var CustomRouter $block **/
+
+use Practice\CustomRouter\Block\CustomRouter;
+
+?>
+
+<div class="block block-dashboard-info">
+    <div class="block-title"><strong><?= $block->escapeHtml(__('Custom Router')) ?></strong></div>
+    <div class="block-content">
+        <div class="box box-information">
+            <strong class="box-title">
+                <span><?= $block->escapeHtml(__('Custom Router')) ?></span>
+            </strong>
+            <div class="box-content">
+                <p>
+                    <?= $block->escapeHtml($block->getInfo()) ?><br>
+                    <?= 'Hello ' . $block->getViewModel()->getCustomerName() ?>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
